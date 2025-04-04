@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <button class="menu-btn" id="menuBtn">Menu</button>
+        </div>
+        <div class="nav-center">
+            <a href="index.html" class="logo-link"><h1>LUXE</h1></a>
+        </div>
+        <div class="nav-right">
+            <button class="cart-btn" id="cartBtn">Cart (0)</button>
+        </div>
+    </nav>
+
+    <div class="menu" id="menu">
+        <button class="close-btn" id="closeBtn">×</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="#sale">Sale</a></li>
+        </ul>
+    </div>
+
+    <main class="product-detail-page">
+        <div class="product-container" id="productContainer">
+        </div>
+
+        <section class="reviews-section">
+            <h3>Customer Reviews</h3>
+            <div class="overall-rating">
+                <div class="rating-summary">
+                    <span class="average-rating" id="averageRating">4.5</span>
+                    <div class="stars" id="averageStars">
+                        ★★★★½
+                    </div>
+                    <span class="review-count" id="reviewCount">Based on 24 reviews</span>
+                </div>
+            </div>
+
+            <div class="reviews-list" id="reviewsList">
+            </div>
+             <button class="write-review-btn" onclick="showReviewForm()">Write a Review</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About LUXE</h4>
+                <p>Modern fashion for the contemporary lifestyle.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#shipping">Shipping Information</a></li>
+                    <li><a href="#returns">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
